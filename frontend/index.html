@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-page">
+        <div class="container header-container">
+          <div class="header-box">
+            <div class="header-mobile">
+              <button class="header-user js-modal-autorization-open z-ind">
+                Sign Up
+              </button>
+              <button
+                class="header-user js-signed-home-btn is-none z-ind"
+              ></button>
+              <button
+                class="header-user js-modal-autoriz-open js-logout hidden-log"
+              ></button>
+            </div>
+          </div>
+          <div class="backdrop-auth is-hidden">
+            <div class="modal-auth">
+              <button class="modal-auth-close-btn" type="button"></button>
+              <form class="sign-up form" action="">
+                <div class="input-grope" role="group">
+                  <input
+                    class="input-login"
+                    type="text"
+                    name="userName"
+                    required
+                  />
+                  <label class="label" for="">name</label>
+                </div>
+                <div class="input-grope email-sign-up" role="group">
+                  <input
+                    class="input-login"
+                    type="email"
+                    name="userEmail"
+                    required
+                  />
+                  <label class="label" for="">email</label>
+                </div>
+                <div class="input-grope pass-sign-up" role="group">
+                  <input
+                    class="input-login"
+                    type="password"
+                    name="userPassword"
+                    required
+                  />
+                  <label class="label" for="">password</label>
+                </div>
+                <button class="submit-btn" type="submit">sign up</button>
+              </form>
+              <form class="sign-in form" action="">
+                <div class="input-grope email-sign-in" role="group">
+                  <input
+                    class="input-login"
+                    type="email"
+                    name="userEmail"
+                    placeholder=""
+                    required
+                  />
+                  <label class="label" for="">email</label>
+                </div>
+                <div class="input-grope pass-sign-in" role="group">
+                  <input
+                    class="input-login"
+                    type="password"
+                    name="userPassword"
+                    required
+                  />
+                  <label class="label label-password" for="">password</label>
+                </div>
+                <button class="submit-btn" type="submit">sign in</button>
+              </form>
+              <div class="form-menu">
+                <a class="btn-form-link sign-up-link" href="">sign up</a>
+                <a class="btn-form-link sign-in-link" href="">sign in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <form id="form_id1" action="http://localhost:3000/info">
+      <button type="submit">BTN1</button>
+    </form>
+    <form
+      method="post"
+      id="form_id2"
+      action="http://localhost:3000/registration"
+    >
+      <input type="text" name="text2" />
+      <button type="submit">BTN2</button>
+    </form>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
